@@ -33,7 +33,7 @@ if debug:
 else:
     server = smtplib.SMTP('smtp.gmail.com',587)
     server.starttls()
-    server.login("deeleetech@gmail.com", "fuckXbox225!")
+    server.login("deeleetech@gmail.com", "")
     text = msg.as_string()
     server.sendmail(fromaddr, toaddr, text)
     print('SENT SUCESS!!!!')
