@@ -4,7 +4,7 @@ import discord
 import random
 import apiFunctions
 
-TOKEN = '' #from discord
+TOKEN = '' #TOKEN KEY -- from discord developer bot
 
 client = discord.Client()
 
