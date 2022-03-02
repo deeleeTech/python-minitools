@@ -4,7 +4,7 @@ import discord
 import random
 import apiFunctions
 
-TOKEN = 'OTQ4NDc0NTA3ODAxMjkyODcw.Yh8VuA.m6kMNE1Y5sExubA-ENuDjOSz4bs' #from discord
+TOKEN = '' #from discord
 
 client = discord.Client()
 
