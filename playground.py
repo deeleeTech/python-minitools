@@ -1,4 +1,4 @@
-import apiFunctions
+import TOOLS.apiFunctions as apiFunctions
 
-printResponse = apiFunctions.kanye_quotes()
+printResponse = apiFunctions.apex_data('BloodyBuldge')
 print(printResponse)

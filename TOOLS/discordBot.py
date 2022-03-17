@@ -19,9 +19,12 @@ async def on_message(message):
     channel = str(message.channel.name)
     print(f'{username} : {user_message} ({channel})')
 
+
     if message.author == client.user:
         return
     if message.channel.name == 'bots-house':
+        messagePrefix = user_message[0:2] 
+
         if user_message.lower() == 'hello':
             await message.channel.send(f'Hello {username}!')
         elif user_message.lower() == 'bye':
@@ -29,5 +32,8 @@ async def on_message(message):
         elif user_message.lower() == '!ye says':
             myResponse = apiFunctions.kanye_quotes()
             await message.channel.send(f'"{myResponse}..."')
+        # elif messagePrefix == '!#':
+        #     myResponse = apiFunctions.osrs_api()
+        #     await message.channel.send(f'"{myResponse}..."')
     
 client.run(TOKEN)
